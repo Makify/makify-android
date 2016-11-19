@@ -10,4 +10,55 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.makify.makify.HomeActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+        <Button
+            android:text="Template"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/templateButton"
+            android:onClick="goToTemplateActivity"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"/>
+
+        <Button
+            android:text="Blank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/blankButton"
+            android:onClick="goToBlankActivity"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08" />
+
+        <Button
+            android:text="Imports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/importButton"
+            android:onClick="goToImportActivity"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08" />
+
+        <Button
+            android:text="Load"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loadButton"
+            android:onClick="goToLoadActivity"/>
+    </LinearLayout>
 </RelativeLayout>
