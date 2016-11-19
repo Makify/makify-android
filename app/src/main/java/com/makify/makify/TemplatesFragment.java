@@ -28,9 +28,6 @@ public class TemplatesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Inflate the layout for this fragment
-        // Get ListView object from xml
-        // listView = (ListView) findViewById(R.id.templateList);
 
         // Defined Array values to show in ListView
         String[] fileTemplates = getResources().getStringArray(R.array.examples);
