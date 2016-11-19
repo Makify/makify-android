@@ -17,10 +17,8 @@ import android.widget.TextView;
 public class BoardFragment extends Fragment {
 
     Button bt1;
-    TextView tv1;
 
     int selectedColor = R.color.white;
-    int i=0;
 
 
     public BoardFragment() {
@@ -32,7 +30,6 @@ public class BoardFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         bt1 = (Button) getView().findViewById(R.id.butt);
-        tv1 = (TextView) getView().findViewById(R.id.samplecc);
 
         final RadioGroup cPalate = (RadioGroup) getView().findViewById(R.id.cPicker);
         final RadioButton colorRed = (RadioButton) getView().findViewById(R.id.cRed);
@@ -58,7 +55,6 @@ public class BoardFragment extends Fragment {
                 if (isChecked)
                 {
                     // Changes the textview's text to "Checked: example radiobutton text"
-                    tv1.setText("Checked:");
                 }
 
                 int radioButtonID = cPalate.getCheckedRadioButtonId();
