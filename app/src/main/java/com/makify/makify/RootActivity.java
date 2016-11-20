@@ -2,6 +2,7 @@ package com.makify.makify;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Debug;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
@@ -22,6 +23,7 @@ public class RootActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_root);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -31,17 +33,6 @@ public class RootActivity extends AppCompatActivity
         fragmentTransaction.replace(R.id.fragment_container, fragment);
 
         fragmentTransaction.commit();
-
-        /*
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-        */
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -92,7 +83,6 @@ public class RootActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            //Intent intent = new Intent(this, );
             MainActivityFragment fragment = new MainActivityFragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, fragment);
@@ -114,11 +104,15 @@ public class RootActivity extends AppCompatActivity
             fragmentTransaction.commit();
 
         } else if (id == R.id.nav_board) {
-            BoardFragment fragment = new BoardFragment();
+            /*BoardFragment fragment = new BoardFragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, fragment);
 
             fragmentTransaction.commit();
+            */
+            Intent intent =  new Intent(this, BoardActivity.class);
+            startActivity(intent);
+
 
         } else if (id == R.id.nav_settings) {
             SettingsActivityFragment fragment = new SettingsActivityFragment();
@@ -130,7 +124,6 @@ public class RootActivity extends AppCompatActivity
         } else if (id == R.id.nav_sign_out) {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
