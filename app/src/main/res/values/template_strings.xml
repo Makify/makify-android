@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name_batman">Batman</string>
+    <string name="name_apple">Apple</string>
+    <string name="name_dog">Dog</string>
+    <string name="name_star">Star</string>
+
+    <string name="desc_batman">Superman</string>
+    <string name="desc_apple">An apple a day</string>
+    <string name="desc_dog">Meow</string>
+    <string name="desc_star">We\'ll be chasing</string>
+</resources>
