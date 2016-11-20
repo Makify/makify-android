@@ -21,9 +21,6 @@ public class SettingsActivityFragment extends Fragment {
         // Required empty public constructor
     }
 
-    private ListView dimensionsArray;
-    private String[] items;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
