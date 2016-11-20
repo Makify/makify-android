@@ -9,13 +9,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class BoardFragment extends Fragment {
-
     Button bt1;
 
     int selectedColor = R.color.white;
@@ -27,10 +25,10 @@ public class BoardFragment extends Fragment {
 
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bt1 = (Button) getView().findViewById(R.id.butt);
 
+        bt1 = (Button) getView().findViewById(R.id.butt);
         final RadioGroup cPalate = (RadioGroup) getView().findViewById(R.id.cPicker);
         final RadioButton colorRed = (RadioButton) getView().findViewById(R.id.cRed);
         final RadioButton colorPink = (RadioButton) getView().findViewById(R.id.cPink);
@@ -108,6 +106,7 @@ public class BoardFragment extends Fragment {
                 bt1.setBackgroundColor(getResources().getColor(selectedColor));
             }
         });
+        return inflater.inflate(R.layout.fragment_board, container, false);
     }
 
 }
