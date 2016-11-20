@@ -14,32 +14,27 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-<<<<<<< HEAD
-            android:name=".RGroup"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-=======
+            android:theme="@style/AppTheme.NoActionBar"
             android:name=".LoginActivity"
             android:label="@string/title_activity_login">
->>>>>>> 462ea2f855f227998134bbe4e0a59ad11265be4f
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-<<<<<<< HEAD
+            android:name=".RGroup"
+            android:label="Makify" />
+
+        <activity
             android:name=".Login"
             android:label="@string/title_activity_login" />
+
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_app"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".app"></activity>
-=======
-            android:name=".MainActivity"
-            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".RootActivity"
