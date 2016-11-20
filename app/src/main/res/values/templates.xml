@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="examples">
+        <item>Bumblebee</item>
+        <item>Apple</item>
+        <item>Doggy</item>
+        <item>Guitar</item>
+        <item>UK</item>
+        <item>Alpha</item>
+        <item>A</item>
+        <item>Glasses</item>
+    </string-array>
+
+</resources>

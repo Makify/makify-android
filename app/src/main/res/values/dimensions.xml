@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dimensions_array">
+        <item>400x600</item>
+        <item>200x300</item>
+        <item>800x200</item>
+    </string-array>
+</resources>

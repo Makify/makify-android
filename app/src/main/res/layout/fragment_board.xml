@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.makify.makify.BoardFragment">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:id="@+id/butt"
+        style="@style/Widget.AppCompat.Button.Small" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:background="?android:attr/colorButtonNormal"
+        android:padding="0dp"
+        android:id="@+id/cPicker">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:backgroundTint="@color/white"
+            android:buttonTint="@color/white"
+            android:id="@+id/cWhite" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:backgroundTint="@color/pink"
+            android:buttonTint="@color/pink"
+            android:id="@+id/cPink" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:buttonTint="@color/red"
+            android:backgroundTint="@color/red"
+            android:id="@+id/cRed" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:backgroundTint="@color/orange"
+            android:buttonTint="@color/orange"
+            android:id="@+id/cOrange" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:buttonTint="@color/yellow"
+            android:backgroundTint="@color/yellow"
+            android:id="@+id/cYellow" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:buttonTint="@color/green"
+            android:backgroundTint="@color/green"
+            android:id="@+id/cGreen" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:backgroundTint="@color/blue"
+            android:buttonTint="@color/blue"
+            android:id="@+id/cBlue" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:buttonTint="@color/purple"
+            android:backgroundTint="@color/purple"
+            android:id="@+id/cPurple" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:backgroundTint="@color/brown"
+            android:buttonTint="@color/brown"
+            android:id="@+id/cBrown" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:backgroundTint="@color/black"
+            android:buttonTint="@color/black"
+            android:id="@+id/cBlack" />
+    </RadioGroup>
+
+
+</FrameLayout>
