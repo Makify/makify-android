@@ -15,6 +15,17 @@ import android.widget.RadioGroup;
  */
 public class BoardFragment extends Fragment {
     Button bt1;
+    RadioGroup cPalate;
+    RadioButton colorRed;
+    RadioButton colorPink;
+    RadioButton colorGreen;
+    RadioButton colorBlue;
+    RadioButton colorYellow;
+    RadioButton colorPurple;
+    RadioButton colorOrange;
+    RadioButton colorBrown;
+    RadioButton colorBlack;
+    RadioButton colorWhite;
 
     int selectedColor = R.color.white;
 
@@ -26,20 +37,21 @@ public class BoardFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
 
         bt1 = (Button) getView().findViewById(R.id.butt);
-        final RadioGroup cPalate = (RadioGroup) getView().findViewById(R.id.cPicker);
-        final RadioButton colorRed = (RadioButton) getView().findViewById(R.id.cRed);
-        final RadioButton colorPink = (RadioButton) getView().findViewById(R.id.cPink);
-        final RadioButton colorGreen = (RadioButton) getView().findViewById(R.id.cGreen);
-        final RadioButton colorBlue = (RadioButton) getView().findViewById(R.id.cBlue);
-        final RadioButton colorYellow = (RadioButton) getView().findViewById(R.id.cYellow);
-        final RadioButton colorPurple = (RadioButton) getView().findViewById(R.id.cPurple);
-        final RadioButton colorOrange = (RadioButton) getView().findViewById(R.id.cOrange);
-        final RadioButton colorBrown = (RadioButton) getView().findViewById(R.id.cBrown);
-        final RadioButton colorBlack = (RadioButton) getView().findViewById(R.id.cBlack);
-        final RadioButton colorWhite = (RadioButton) getView().findViewById(R.id.cWhite);
+        cPalate = (RadioGroup) getView().findViewById(R.id.cPicker);
+        colorRed = (RadioButton) getView().findViewById(R.id.cRed);
+        colorPink = (RadioButton) getView().findViewById(R.id.cPink);
+        colorGreen = (RadioButton) getView().findViewById(R.id.cGreen);
+        colorBlue = (RadioButton) getView().findViewById(R.id.cBlue);
+        colorYellow = (RadioButton) getView().findViewById(R.id.cYellow);
+        colorPurple = (RadioButton) getView().findViewById(R.id.cPurple);
+        colorOrange = (RadioButton) getView().findViewById(R.id.cOrange);
+        colorBrown = (RadioButton) getView().findViewById(R.id.cBrown);
+        colorBlack = (RadioButton) getView().findViewById(R.id.cBlack);
+        colorWhite = (RadioButton) getView().findViewById(R.id.cWhite);
 
         cPalate.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {
