@@ -104,11 +104,15 @@ public class RootActivity extends AppCompatActivity
             fragmentTransaction.commit();
 
         } else if (id == R.id.nav_board) {
-            BoardFragment fragment = new BoardFragment();
+            /*BoardFragment fragment = new BoardFragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, fragment);
 
             fragmentTransaction.commit();
+            */
+            Intent intent =  new Intent(this, BoardActivity.class);
+            startActivity(intent);
+
 
         } else if (id == R.id.nav_settings) {
             SettingsActivityFragment fragment = new SettingsActivityFragment();
