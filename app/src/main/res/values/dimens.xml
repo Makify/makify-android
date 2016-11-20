@@ -6,8 +6,5 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="nav_header_vertical_spacing">16dp</dimen>
     <dimen name="nav_header_height">160dp</dimen>
-<<<<<<< HEAD
-=======
     <dimen name="text_margin">16dp</dimen>
->>>>>>> 462ea2f855f227998134bbe4e0a59ad11265be4f
 </resources>

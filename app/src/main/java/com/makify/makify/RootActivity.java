@@ -110,7 +110,7 @@ public class RootActivity extends AppCompatActivity
 
             fragmentTransaction.commit();
             */
-            Intent intent =  new Intent(this, BoardActivity.class);
+            Intent intent =  new Intent(this, RGroup.class);
             startActivity(intent);
 
 

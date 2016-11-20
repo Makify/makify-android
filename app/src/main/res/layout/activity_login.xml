@@ -8,11 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-<<<<<<< HEAD
-    tools:context="com.makify.makify.Login">
-=======
     tools:context="com.makify.makify.LoginActivity">
->>>>>>> 462ea2f855f227998134bbe4e0a59ad11265be4f
 
     <!-- Login progress -->
     <ProgressBar

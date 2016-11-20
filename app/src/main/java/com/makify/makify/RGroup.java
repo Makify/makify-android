@@ -404,7 +404,7 @@ public class RGroup extends AppCompatActivity {
 
 
 
-        bt1.setOnClickListener(new View.OnClickListener() {
+        reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 bt1.setBackground(getResources().getDrawable(R.drawable.b_base));
@@ -559,8 +559,6 @@ public class RGroup extends AppCompatActivity {
                 bt150.setBackground(getResources().getDrawable(R.drawable.b_base));
             }
         });
-
-
 
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -1596,5 +1594,6 @@ public class RGroup extends AppCompatActivity {
             }
         });
     }
+
 
 }
