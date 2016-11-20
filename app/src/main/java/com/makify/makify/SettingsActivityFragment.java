@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Spinner;
 
 
@@ -20,15 +21,19 @@ public class SettingsActivityFragment extends Fragment {
         // Required empty public constructor
     }
 
+    private ListView dimensionsArray;
+    private String[] items;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        /*
         Spinner spinner = (Spinner) getView().findViewById(R.id.dimensions_spinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter.createFromResource(getContext(), R.array.dimensions_array, R.layout.fragment_settings_activity);
+        ArrayAdapter<String> adapter = new ArrayAdapter.createFromResource(getActivity(), R.array.dimensions_array, R.layout.fragment_settings_activity);
         adapter.setDropDownViewResource(R.layout.simple_dimension_item);
         spinner.setAdapter(adapter);
+        */
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_settings_activity, container, false);
     }
