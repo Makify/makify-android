@@ -12,6 +12,7 @@ public class RGroup extends AppCompatActivity {
 
 
     Button reset;
+    Button erase;
 
 
 
@@ -166,7 +167,7 @@ public class RGroup extends AppCompatActivity {
     Button bt149;
     Button bt150;
 
-    int selectedColor = R.color.white;
+    int selectedColor = R.drawable.b_base;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -174,6 +175,7 @@ public class RGroup extends AppCompatActivity {
         setContentView(R.layout.activity_rgroup);
 
         reset = (Button) findViewById(R.id.reset);
+        erase = (Button) findViewById(R.id.erase);
 
         bt1 = (Button) findViewById(R.id.butt1);
         bt2 = (Button) findViewById(R.id.butt2);
@@ -353,11 +355,10 @@ public class RGroup extends AppCompatActivity {
                 }
 
                 int radioButtonID = cPalate.getCheckedRadioButtonId();
-
-
+                
                 if(radioButtonID == colorRed.getId())
                 {
-                 selectedColor = R.drawable.b_red;
+                    selectedColor = R.drawable.b_red;
                 }
                 else if(radioButtonID == colorPink.getId())
                 {
@@ -402,7 +403,12 @@ public class RGroup extends AppCompatActivity {
              }
         });
 
-
+        erase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                selectedColor = R.drawable.b_base;
+            }
+        });
 
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
